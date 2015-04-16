@@ -1,0 +1,16 @@
+<nav class="sidebar" ng-class="sidebarOpened ? 'open' : ''">
+    <ul class="sidebar-menu">
+        <li ng-repeat="item in data" ng-class="item.open ? 'open' : ''">
+            <a ng-click="item.open = !item.open">
+                <i class="fa {{item.icon}}"></i>
+                {{item.text}}
+                <i ng-if="item.data.length" class="fa fa-chevron-right menu-expand" ng-class="item.open ? 'fa-rotate-90' : ''"></i>
+            </a>
+            <ul ng-if="item.data.length" class="sidebar-submenu">
+                <li ng-repeat="subitem in item.data">
+                    <a href="#">{{subitem.text}}</a>
+                </li>
+            </ul>
+        </li>         
+    </ul>
+</nav>

@@ -1,0 +1,20 @@
+body {
+  padding: 0;
+}
+
+/** NAVBAR **/
+
+/** Button is located on navbar **/
+.toggle-sidebar {
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+.main-container {
+    position: relative;
+    margin-top: 50px;
+}
+
+.main-container.retract {
+    margin-left: 230px;
+}
